@@ -24,3 +24,5 @@ for j in oddcomp:
 	# print(total)
 	if total < j:
 		print(j)
+
+# INCOMPLETE

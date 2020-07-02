@@ -6,10 +6,9 @@ rooms = [1,2,3,4,5,6,7,8,9,10]
 
 
 def FiveAB():
+	print("A, B")
 
 	x = list(permutations(rooms, 2))
-
-	print(len(x))
 
 
 	difflist = []
@@ -26,11 +25,12 @@ def FiveAB():
 		total += difflist.count(l)
 
 	print("Total number of rooms: " + str(total))
-	print("Chance of ONE room separating them: " + str(18/total*100))
-	print("Polly is correct.")
+	print("Chance of ONE room separating them: " + str(18/total*100) + "%")
+	print("Therefore Polly is correct.")
 	print()
 	print()
 def FiveC():
+	print("C")
 
 	x = list(permutations(rooms,3))
 	newlist = []
@@ -48,10 +48,17 @@ def FiveC():
 	print("Chance that the are within a block of 5 consecutive rooms: " + str(len(conseclist)/len(x)*100) + "%")
 	print("Therefore, Ollie is correct")
 
-smallrooms = [1,2,3,4,5]
-x = list(permutations([1,2,3,4,5], 2))
-for i in x:
-	print(i)
-	i = set(i)
+# smallrooms = [1,2,3,4,5]
+# x = list(permutations([1,2,3,4,5], 2))
+# for i in x:
+# 	print(i)
+# 	i = set(i)
 
-print(len(x))
+# print(len(x))
+
+print("Question 5")
+print("--------------------------")
+FiveAB()
+FiveC()
+
+stop = input("Press ENTER to exit")

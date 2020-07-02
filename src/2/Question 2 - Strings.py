@@ -1,5 +1,10 @@
 from itertools import permutations
 
+
+print("Question 2:")
+print("--------------------------")
+print()
+
 a = "a"
 b = "b"
 
@@ -55,24 +60,40 @@ def getSubstrs(words):
 
 
 def TwoD():
+	print("C")
+	print()
 	combos = []
 	givenstr = "aabba"
 	combos = generateStrings(3,givenstr)
 	getSubstrs(combos)
-
+	print()
 
 def TwoC():
+	print("B")
+	print()
 	combos = []
 	combos = generateStrings(5)
 	getSubstrs(combos)
+	print()
 
 def TwoB():
+	print("B")
+	print()
 	combos = []
 	combos = generateStrings(4)
 	getSubstrs(combos)
+	print()
 
 def TwoA():
+	print("A")
+	print()
 	combos = generateStrings(3)
 	getSubstrs(combos)
+	print()
 
 TwoA()
+TwoB()
+TwoC()
+TwoD()
+
+off = input("Press ENTER to exit...")
