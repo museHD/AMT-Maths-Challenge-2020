@@ -9,7 +9,7 @@ x
 # 		if seq[i]
 
 
-
+# ABCD 
 lst = [1, 2, 3, 4, 5]
 x = [p for p in itertools.product(lst, repeat=5)]
 
